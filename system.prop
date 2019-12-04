@@ -56,6 +56,7 @@ persist.vendor.ssr.restart_level=ALL_ENABLE
 wifi.interface=wlan0
 
 # lmkd
+ro.lmk.use_psi=true
 ro.lmk.low_ram=false
 ro.lmk.kill_heaviest_task=true
 ro.lmk.kill_timeout_ms=100
