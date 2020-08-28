@@ -25,6 +25,9 @@ $(call inherit-product, device/xiaomi/davinci/device.mk)
 $(call inherit-product, vendor/rr/config/common_full_phone.mk)
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
+# Inherit OPScreen Recorder
+$(call inherit-product-if-exists, vendor/apps/OPScreenRecord/config.mk)
+
 PRODUCT_NAME := rr_davinci
 PRODUCT_DEVICE := davinci
 PRODUCT_BRAND := Xiaomi
